@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 (LocationManager)getSystemService(Context.LOCATION_SERVICE);
 
         LocationListener mlocListener = new MyLocationListener();
-
+        //have to handle if permission denied
         mlocManager.requestLocationUpdates( LocationManager.GPS_PROVIDER, 0, 0, mlocListener);
 
     }
